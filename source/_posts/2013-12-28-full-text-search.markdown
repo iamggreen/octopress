@@ -32,6 +32,8 @@ Now this is just a very basic full-text search.  I can think of some optimizatio
 
 2. Tune the rankings.  Give certain matches different weights based on meeting different criteria.  Matching all words, matching words in order, matching words before normalizing, word frequency.  We could tune our search result rankings by changing how much those criteria matter and determine if that gives us better search results.
 
+References
+
 MIT OpenCourseware - Software Engineering for Web Applications - [Search Assignment](http://philip.greenspun.com/seia/search)
 
 MIT OpenCourseware - [Software Engineering for Web Applications](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-171-software-engineering-for-web-applications-fall-2003/index.htm)
