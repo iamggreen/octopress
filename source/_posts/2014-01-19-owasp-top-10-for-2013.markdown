@@ -1,0 +1,75 @@
+---
+layout: post
+title: "OWASP Top 10 for 2013"
+date: 2014-01-19 08:37:48 -0600
+comments: true
+categories: [security]
+---
+
+OWASP is the Open Web Application Security Project.  The OWASP Top Ten project contains the top 10 security vulnerabilities for web applications.  Every year they publish this list.  Below is the top 10 vulnerabilities of 2013.
+
+1. **Injection**
+
+   This is any kind of untrusted data sent to a web application without validation.  SQL Injection is a big one but also consider script injection.  To protect against this use bind variables for SQL and avoid dynamic SQL statements.  Also, validate all data coming from user forms/requests.  Script injection is harmful particularly is it is data coming from the user and being displayed to other's on the browser.  If not properly escaped it can contain scripts that do malicious activities.
+
+      ---
+
+2. **Broken Authentication and Session Management**
+
+   Building custom authentication and session management is hard.  Doing it wrong could leave your application open to allowing intruders access to accounts and user information.  The recommendation is to use tried and true methods and shy away from custom techniques.
+
+   ---
+
+3. **Cross-Site Scripting (XSS)**
+
+   XSS and Injection go hand in hand.  This is the most prevalent web application security flaw.  XSS occurs when an application includes user supplied data in a page sent to the browser without properly validating or escaping that content.  The types of XSS flaws are 1) Stored, 2) Reflected, and 3) DOM based XSS
+
+   ---
+
+4. **Insecure Direct Object References**
+
+   This type of flaw occurs when a user, usually an authorized system user, changes a parameter that directly refers to a system object to another object the user isn't authorized for.  The application assumes that since the user is authorized they are not also an attacker.  The best way to prevent this is to check access on a per object bases, or use per user or session indirect object references.
+
+   ---
+
+5. **Security Misconfiguration**
+
+   This can happen at any level of an application stack including this platform, web server, application server, database, and custom code.  Having an automated repeatable hardening process for servers can help with server misconfiguration.  Also, keep up to date with software updates and patches and run scans and audits periodically.  Also, have a strong application architecture that provides effective, secure separate between components.
+
+   ---
+
+6. **Sensitive Data Exposure**
+
+   This happens when an attacker accesses sensitive data at rest, in transit, or in customer browsers.  Usually the result of not encrypting sensitive data.  Also can happen due to choosing weak key generation, management, or algorithm techniques.
+
+   ---
+
+7. **Missing Function Level Access Control**
+
+   This is the result of not authenticating users and not protecting privileged data.  Sometimes developers try to leverage security by obscurity and believe that if there are no direct links to a page, they do not need to secure them.
+
+   ---
+
+8. **Cross-Site Request Forgery (CSRF)**
+
+   This happens when an attacker creates a forged HTTP request and tricks a victim into submitting them via image tags, XSS, or numerous other techniques.  If the user is authenticated the attack will succeed.  This attack takes advantage of the predictable nature of an http action's parameters and the fact that a browser sends cookie credentials automatically with a  request.  To prevent a CSRF, it requires the inclusion of an unpredictable token in each HTTP request.  This should be unique per session at a minimum.  This token can be included as a hidden field in the page.
+
+   ---
+
+9. **Using Components with Known Vulnerabilities**
+
+   This happens when vulnerable components are used and exploited. The vulnerability could be new or it could be old and the components/libraries used are simply not up to date. To protect against this, identify all components used along with versions, monitor the security of these components publicly.  Also, establish security policies governing these components uses and consider adding security wrappers around the components. 
+
+   ---
+
+10. **Unvalidated Redirects and Forwards**
+
+   This type of attack happens with an attacker tricks a user into submitting a request to your website.  The attacker links to invalidated redirects and tricks the victim into clicking it.  Since the link is to a trusted domain the user is more likely to trust the page they are being redirected to.  This could be the attacker's page asking for credentials from your site.  To prevent this type of attack, either do not use redirects and forwards or do not involve user parameters in determining the destination.  At a minimum ensure the supplied url parameter is valid and authorized for the user, preferably using a mapping value rather than a url.
+
+   ---
+
+
+
+ [OWASP Top Ten Project](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
+
+
