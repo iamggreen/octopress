@@ -3,7 +3,7 @@ layout: post
 title: "CSS Declaration Precedence"
 date: 2014-01-15 21:48:54 -0600
 comments: true
-categories: html
+categories: css
 ---
 
 The W3 Specifications on CSS 2.1 say what the CSS Declaration Precedence order but I found it harder to track down what each type of declaration actually is.  This is the definitions in order.

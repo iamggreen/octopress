@@ -3,7 +3,7 @@ layout: post
 title: "Keyframe Animations"
 date: 2014-01-18 11:27:15 -0600
 comments: true
-categories: 
+categories: css
 ---
 
 CSS3 defines a property called keyframes in order to allow animation to be done via CSS.  While this works in most up-to-date browsers (Chrome, IE9+, Mozilla, Opera) they all require vendor prefixes to work as the standard properties do not currently work on any browser.  All animation properties as well as the @keyframe declaration must have a vendor prefix to work.  The vendor prefixes have been left of in this article for brevity.

@@ -3,7 +3,7 @@ layout: post
 title: "Full Text Search"
 date: 2013-12-28 00:00:00 -0600
 comments: true
-categories: 
+categories: databases
 ---
 
 Since I have never had a project that requires full text document search I haven't thought much about how it's done.  After reading an assignment from the MIT OpenCourseware course Software Engineering for Web Applications  I think I have a much better understanding of how it is done and from the reading this would be how I would approach it.
