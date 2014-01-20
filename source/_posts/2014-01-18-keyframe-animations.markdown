@@ -93,6 +93,12 @@ The properties are:
 	
 --- 
 
+The shorthand version for the animation property is: 
+
+```
+animation: animation-name animation-duration animation-timing-function animation-delay animation-play-state animation-fill-direction;
+```
+
 And that's most of what you need to start playing with animations in CSS.  Some of the pages I put together for my learning are below.  Have fun!
 
 
